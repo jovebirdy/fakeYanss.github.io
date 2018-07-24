@@ -142,7 +142,7 @@
 <meta property="og:site_name" content="有约如铁">
 <meta property="og:description" content="本文转发为了方便查看，原文地址 HashMap简介HashMap是基于哈希表实现的，每一个元素都是一个key-value对，其内部通过单链表解决冲突问题，容量不足（超过了阈值）时，同样会自动增长。 HashMap是非线程安全的，只是用于单线程环境下，多线程环境下可以采用concurrent并发包下的concurrentHashMap。 HashMap实现了Serializable接口，因此它支持序">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-07-24T06:53:48.562Z">
+<meta property="og:updated_time" content="2018-07-24T07:25:16.551Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HashMap源码剖析">
 <meta name="twitter:description" content="本文转发为了方便查看，原文地址 HashMap简介HashMap是基于哈希表实现的，每一个元素都是一个key-value对，其内部通过单链表解决冲突问题，容量不足（超过了阈值）时，同样会自动增长。 HashMap是非线程安全的，只是用于单线程环境下，多线程环境下可以采用concurrent并发包下的concurrentHashMap。 HashMap实现了Serializable接口，因此它支持序">
@@ -223,15 +223,6 @@
 
   <script src="/js/src/photoswipe.min.js?v=5.1.2"></script>
   <script src="/js/src/photoswipe-ui-default.min.js?v=5.1.2"></script>
-  <!-- <script>
-  var _hmt = _hmt || [];
-  (function() {
-    var hm = document.createElement("script");
-    hm.src = "https://hm.baidu.com/hm.js?890a21db2efbafd7c4a9d6d3241074cc";
-    var s = document.getElementsByTagName("script")[0]; 
-    s.parentNode.insertBefore(hm, s);
-  })();
-</script> -->
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
