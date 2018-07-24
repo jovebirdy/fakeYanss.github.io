@@ -6,6 +6,7 @@
 
 
 <html class="theme-next mist use-motion" lang="en">
+<meta name="google-site-verification" content="LaoF_u42K4EdVp3eusVMdLDAp5fyKj_lTPYrmwW5ipo" />
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -68,7 +69,7 @@
 
 
 
-  <meta name="baidu-site-verification" content="7fUQ7s0poC" />
+  <meta name="baidu-site-verification" content="0QPRs7dWzh" />
 
 
 
@@ -140,7 +141,7 @@
 <meta property="og:site_name" content="有约如铁">
 <meta property="og:description" content="风起时，唯有努力生存  时间总是过得很快，总觉得自己没什么变化，其实只是不自知。自己早已从当初那个喜欢看书喜欢文字总觉得人生天地间须得有诗意的小孩子，长成现在懂得生活变的市侩学会斤斤计较的小人物了。 只希望在这里，写一点仅有的趣味。也记录学习过程，积攒知识。    一句话我的简历   20180502五一出去玩真累，十一千万不能这么过了。20180220两天的外出游玩，只觉不如在家躺尸">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-07-24T06:19:59.749Z">
+<meta property="og:updated_time" content="2018-07-24T06:53:48.578Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="有约如铁">
 <meta name="twitter:description" content="风起时，唯有努力生存  时间总是过得很快，总觉得自己没什么变化，其实只是不自知。自己早已从当初那个喜欢看书喜欢文字总觉得人生天地间须得有诗意的小孩子，长成现在懂得生活变的市侩学会斤斤计较的小人物了。 只希望在这里，写一点仅有的趣味。也记录学习过程，积攒知识。    一句话我的简历   20180502五一出去玩真累，十一千万不能这么过了。20180220两天的外出游玩，只觉不如在家躺尸">
@@ -198,7 +199,7 @@
     var _hmt = _hmt || [];
     (function() {
       var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?32ea829ea8755695f5f20a4c2949d070";
+      hm.src = "https://hm.baidu.com/hm.js?890a21db2efbafd7c4a9d6d3241074cc";
       var s = document.getElementsByTagName("script")[0];
       s.parentNode.insertBefore(hm, s);
     })();
@@ -221,15 +222,15 @@
 
   <script src="/js/src/photoswipe.min.js?v=5.1.2"></script>
   <script src="/js/src/photoswipe-ui-default.min.js?v=5.1.2"></script>
-  <script>
+  <!-- <script>
   var _hmt = _hmt || [];
   (function() {
     var hm = document.createElement("script");
-    hm.src = "https://hm.baidu.com/hm.js?0f0daeaed626293d9c84d4ebb98cb655";
+    hm.src = "https://hm.baidu.com/hm.js?890a21db2efbafd7c4a9d6d3241074cc";
     var s = document.getElementsByTagName("script")[0]; 
     s.parentNode.insertBefore(hm, s);
   })();
-</script>
+</script> -->
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -254,7 +255,7 @@
     var _hmt = _hmt || [];
     (function() {
       var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?32ea829ea8755695f5f20a4c2949d070";
+      hm.src = "https://hm.baidu.com/hm.js?890a21db2efbafd7c4a9d6d3241074cc";
       var s = document.getElementsByTagName("script")[0];
       s.parentNode.insertBefore(hm, s);
     })();
@@ -485,7 +486,8 @@
   
     <div class="comments" id="comments">
       
-        <div id="gitment-container"></div>
+        <div onclick="showGitment()" id="gitment-display-button">View Gitment</div>
+        <div id="gitment-container" style="display:none"></div>
       
     </div>
 
@@ -813,7 +815,7 @@
             owner: 'fakeYanss',
             repo: 'fakeYanss.github.io',
             
-            lang: "default" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            lang: "en" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
             
             oauth: {
             
@@ -826,7 +828,11 @@
       }
 
       
-      renderGitment();
+      function showGitment(){
+        document.getElementById("gitment-display-button").style.display = "none";
+        document.getElementById("gitment-container").style.display = "block";
+        renderGitment();
+      }
       
       </script>
     

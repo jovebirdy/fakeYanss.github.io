@@ -6,6 +6,7 @@
 
 
 <html class="theme-next mist use-motion" lang="en">
+<meta name="google-site-verification" content="LaoF_u42K4EdVp3eusVMdLDAp5fyKj_lTPYrmwW5ipo" />
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -68,7 +69,7 @@
 
 
 
-  <meta name="baidu-site-verification" content="7fUQ7s0poC" />
+  <meta name="baidu-site-verification" content="0QPRs7dWzh" />
 
 
 
@@ -141,7 +142,7 @@
 <meta property="og:site_name" content="有约如铁">
 <meta property="og:description" content="本文转自知乎 由于css无法做到js一样的精准操控，所有某些效果是无法实现的，比如在轮播的同时支持用户左右滑动，所以使用css只能实现基本的效果。下面列出来的内容就是我们实现的：  在固定区域中，内部内容自行滑动切换形成播放的效果 当切换到最后一张内容时，会反向播放或者回到起点重播 每张内容会停留一段时间，让用户能够看清楚 内容可以点击/进行操作  dom结构搭建首先要有一个容器作为轮播图的容器">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-07-24T06:19:59.733Z">
+<meta property="og:updated_time" content="2018-07-24T06:53:48.547Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="css实现图片轮播">
 <meta name="twitter:description" content="本文转自知乎 由于css无法做到js一样的精准操控，所有某些效果是无法实现的，比如在轮播的同时支持用户左右滑动，所以使用css只能实现基本的效果。下面列出来的内容就是我们实现的：  在固定区域中，内部内容自行滑动切换形成播放的效果 当切换到最后一张内容时，会反向播放或者回到起点重播 每张内容会停留一段时间，让用户能够看清楚 内容可以点击/进行操作  dom结构搭建首先要有一个容器作为轮播图的容器">
@@ -199,7 +200,7 @@
     var _hmt = _hmt || [];
     (function() {
       var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?32ea829ea8755695f5f20a4c2949d070";
+      hm.src = "https://hm.baidu.com/hm.js?890a21db2efbafd7c4a9d6d3241074cc";
       var s = document.getElementsByTagName("script")[0];
       s.parentNode.insertBefore(hm, s);
     })();
@@ -222,15 +223,15 @@
 
   <script src="/js/src/photoswipe.min.js?v=5.1.2"></script>
   <script src="/js/src/photoswipe-ui-default.min.js?v=5.1.2"></script>
-  <script>
+  <!-- <script>
   var _hmt = _hmt || [];
   (function() {
     var hm = document.createElement("script");
-    hm.src = "https://hm.baidu.com/hm.js?0f0daeaed626293d9c84d4ebb98cb655";
+    hm.src = "https://hm.baidu.com/hm.js?890a21db2efbafd7c4a9d6d3241074cc";
     var s = document.getElementsByTagName("script")[0]; 
     s.parentNode.insertBefore(hm, s);
   })();
-</script>
+</script> -->
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -255,7 +256,7 @@
     var _hmt = _hmt || [];
     (function() {
       var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?32ea829ea8755695f5f20a4c2949d070";
+      hm.src = "https://hm.baidu.com/hm.js?890a21db2efbafd7c4a9d6d3241074cc";
       var s = document.getElementsByTagName("script")[0];
       s.parentNode.insertBefore(hm, s);
     })();
@@ -694,7 +695,8 @@
   
     <div class="comments" id="comments">
       
-        <div id="gitment-container"></div>
+        <div onclick="showGitment()" id="gitment-display-button">View Gitment</div>
+        <div id="gitment-container" style="display:none"></div>
       
     </div>
 
@@ -1044,7 +1046,7 @@
             owner: 'fakeYanss',
             repo: 'fakeYanss.github.io',
             
-            lang: "default" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            lang: "en" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
             
             oauth: {
             
@@ -1057,7 +1059,11 @@
       }
 
       
-      renderGitment();
+      function showGitment(){
+        document.getElementById("gitment-display-button").style.display = "none";
+        document.getElementById("gitment-container").style.display = "block";
+        renderGitment();
+      }
       
       </script>
     

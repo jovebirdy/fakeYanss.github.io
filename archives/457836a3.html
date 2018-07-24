@@ -6,6 +6,7 @@
 
 
 <html class="theme-next mist use-motion" lang="en">
+<meta name="google-site-verification" content="LaoF_u42K4EdVp3eusVMdLDAp5fyKj_lTPYrmwW5ipo" />
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -68,7 +69,7 @@
 
 
 
-  <meta name="baidu-site-verification" content="7fUQ7s0poC" />
+  <meta name="baidu-site-verification" content="0QPRs7dWzh" />
 
 
 
@@ -141,7 +142,7 @@
 <meta property="og:site_name" content="有约如铁">
 <meta property="og:description" content="SSM包含持久层Dao和Model，业务层Service和ServiceImpl，表现层Controller和View，本文讲述这些不同层的作用和关系。">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-07-24T06:19:59.733Z">
+<meta property="og:updated_time" content="2018-07-24T06:53:48.562Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SSM框架各层关系">
 <meta name="twitter:description" content="SSM包含持久层Dao和Model，业务层Service和ServiceImpl，表现层Controller和View，本文讲述这些不同层的作用和关系。">
@@ -199,7 +200,7 @@
     var _hmt = _hmt || [];
     (function() {
       var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?32ea829ea8755695f5f20a4c2949d070";
+      hm.src = "https://hm.baidu.com/hm.js?890a21db2efbafd7c4a9d6d3241074cc";
       var s = document.getElementsByTagName("script")[0];
       s.parentNode.insertBefore(hm, s);
     })();
@@ -222,15 +223,15 @@
 
   <script src="/js/src/photoswipe.min.js?v=5.1.2"></script>
   <script src="/js/src/photoswipe-ui-default.min.js?v=5.1.2"></script>
-  <script>
+  <!-- <script>
   var _hmt = _hmt || [];
   (function() {
     var hm = document.createElement("script");
-    hm.src = "https://hm.baidu.com/hm.js?0f0daeaed626293d9c84d4ebb98cb655";
+    hm.src = "https://hm.baidu.com/hm.js?890a21db2efbafd7c4a9d6d3241074cc";
     var s = document.getElementsByTagName("script")[0]; 
     s.parentNode.insertBefore(hm, s);
   })();
-</script>
+</script> -->
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -255,7 +256,7 @@
     var _hmt = _hmt || [];
     (function() {
       var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?32ea829ea8755695f5f20a4c2949d070";
+      hm.src = "https://hm.baidu.com/hm.js?890a21db2efbafd7c4a9d6d3241074cc";
       var s = document.getElementsByTagName("script")[0];
       s.parentNode.insertBefore(hm, s);
     })();
@@ -761,7 +762,8 @@
   
     <div class="comments" id="comments">
       
-        <div id="gitment-container"></div>
+        <div onclick="showGitment()" id="gitment-display-button">View Gitment</div>
+        <div id="gitment-container" style="display:none"></div>
       
     </div>
 
@@ -1111,7 +1113,7 @@
             owner: 'fakeYanss',
             repo: 'fakeYanss.github.io',
             
-            lang: "default" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            lang: "en" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
             
             oauth: {
             
@@ -1124,7 +1126,11 @@
       }
 
       
-      renderGitment();
+      function showGitment(){
+        document.getElementById("gitment-display-button").style.display = "none";
+        document.getElementById("gitment-container").style.display = "block";
+        renderGitment();
+      }
       
       </script>
     
